@@ -28,7 +28,7 @@ footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 .leftmenu {
   position: fixed;
   top: -10px;
-  left: 10px;
+  left: 20px;
   font-family: Helvetica, Geneva, Arial, sans-serif;
   font-size: 80%;
 }
