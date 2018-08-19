@@ -1,0 +1,170 @@
+%% Inicio del archivo `template-es.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,roman,colorlinks,linkcolor=true]{moderncv}   % opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+
+%\hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
+
+\definecolor{dodgerblue}{rgb}{0.12, 0.56, 1.0}
+\moderncvtheme[blue]{banking}
+\usepackage[latin1]{inputenc}
+\usepackage[scale=0.85,top = 2cm, bottom=1cm]{geometry}
+\definecolor{color1}{rgb}{0.55,0.57,0.67}%{0.57, 0.64, 0.69}% title/subsection/line
+\definecolor{color2}{rgb}{0.66, 0.66, 0.66} % below name section
+\definecolor{color3}{rgb}{1.0,1,1}
+  
+% ajustes para los margenes de pagina
+%\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % si desea cambiar el ando de la columna para las fechas
+
+\makeatletter
+\patchcmd{\makehead}{%search
+  \flushmakeheaddetails\@firstmakeheaddetailselementtrue\\\null}{%replace
+  \flushmakeheaddetails\@firstmakeheaddetailselementtrue\par\vspace{-\baselineskip}\null}{%success
+  }{%failure
+  }
+\makeatother
+
+% datos personales
+\vspace{-3in}
+\name{Parul}{Pandey}
+%\title{T\'itulo del CV (opcional)}       
+     % dato opcional, elimine la linea si no desea el dato
+\address{1223 Valerian Court, Sunnyvale, CA, 94086} % dato opcional, elimine la linea si no desea el dato
+\phone[mobile]{+1~(801)~661~8737}                     % dato opcional, elimine la linea si no desea el dato
+%\phone[fixed]{+2~(345)~678~901}                      % dato opcional, elimine la linea si no desea el dato
+%\phone[fax]{+3~(456)~789~012}  
+\email{parul.pandey85@gmail.com}
+\homepage{http://www.eden.rutgers.edu/~pp395}                           % dato opcional, elimine la linea si no desea el dato
+\social[linkedin][https://www.linkedin.com/in/parul-pandey/]{parul-pandey}
+%\extrainfo{informacion adicional}                    % dato opcional, elimine la linea si no desea el dato
+%\photo[64pt][0.4pt]{picture}                         % '64pt' es la altura a la que la imagen debe ser ajustada, 0.4pt es grosor del marco que lo contiene (eliga 0pt para eliminar el marco) y 'picture' es el nombre del archivo; dato opcional, elimine la linea si no desea el dato
+%\quote{Alguna cita (opcional)}                       % dato opcional, elimine la linea si no desea el dato
+
+%\namefont \titlefont \addressfont \sectionfont \subsectionfont \hintfont \quotefont
+\renewcommand*{\namefont}{\fontsize{25}{25}\mdseries\upshape}
+\renewcommand*{\sectionfont}{\fontsize{14}{14}\mdseries\upshape}
+\renewcommand*{\addressfont}{\fontsize{11}{11}\mdseries\upshape}
+
+%\phone{\textcolor{red}{123 456 7890}}
+% para mostrar etiquetas numericas en la bibliografia (por omision no se muestran etiquetas), solo es util si desea incluir citas en en CV
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliografia con varias fuentes
+%\usepackage{multibib}
+%\newcites{book,misc}{{Libros},{Otros}}
+%----------------------------------------------------------------------------------
+%            contenido
+%----------------------------------------------------------------------------------
+\nopagenumbers 
+\begin{document}
+\vspace*{-2\baselineskip}
+%\definecolor{links}{HTML}{2A1B81}
+\definecolor{links}{rgb}{0.19, 0.55, 0.91}
+\hypersetup{urlcolor=links}
+
+%\begin{CJK*}{UTF8}{gbsn}                     % para redactar el CV en chino usando CJK
+\maketitle
+
+\vspace{-0.3in}
+\section{Education}
+\cventry{Aug. 2011--Nov. 2018}{Ph.D.}{Rutgers University}{New Brunswick, NJ}{\textit{Electrical and Computer Engineering}}{{\textbf{Thesis: } Enabling computationally-intensive applications on resource-constrained platforms via approximation}}  % Los argumentos del 3 al 6 pueden permanecer vacios
+\cventry{Aug. 2009--May 2011}{MS}{University of Utah}{Salt Lake City, Utah}{\textit{Electrical and Computer Engineering}}{}
+
+%\section{Tesis de maestr\'ia}
+%\cvitem{t\'itulo}{\emph{T\'itulo}}
+%\cvitem{sinodares}{Sinodales}
+%\cvitem{descripci\'on}{Una breve descripci\'on de la tesis}
+
+\section{Research Projects}
+%\subsection{Vocacional}
+\cventry{}{}{Adaptive algorithm selection for computer vision applications}{\textnormal {\emph{May 2016--Present}}}{}
+%{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
+%Detalle de logros:%
+{
+\vspace*{-1\baselineskip}
+\begin{itemize}%
+\item {Designed \href{https://www.eden.rutgers.edu/~pp395/ApproxDroid.html}{ApproxDroid}  a Markov decision based framework \emph{[Python]} to select the best object detection algorithm-parameter combination based on the nature of input data in an incoming video.}
+%\resumeSmallItem {Collected video dataset via Bebop drone platform under different conditions such as illumination, clutter, number of objects, and camera point of view to evaluate performance of proposed work. }
+\item {Demonstrated decrease in execution time of detection application by 20\%-70\% with an accuracy loss of 0\%-2\% in comparison to existing works on public datasets.  }
+\item {Application in speeding up computer vision techniques running on resource-limited autonomous systems \emph{[Robots/Drones/Raspberry Pi]}.}\end{itemize}
+}
+
+\cventry{}{}{Accelerating computer vision applications via approximation}{\textnormal {\emph{Sep 2014--Nov 2015}}}{}
+%{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
+%Detalle de logros:%
+{
+\vspace*{-1\baselineskip}
+\begin{itemize}%
+\item {Developed approximation-based novel techniques to reduce execution time of computationally-intensive computer vision applications on resource-constrained Android mobile devices with nominal loss in accuracy.} 
+\item {Developed a novel workflow representation scheme to represent approximated tasks in an application and 
+a light-weight algorithm \emph{[Java]} to select approximated tasks that meet application deadline or battery requirements.} 
+\item {Demonstrated a decrease of up to 40\% in execution time for 5\% loss in accuracy for image processing (Canny edge detection) and feature extraction (Histogram of Gradient and Scale-invariant Feature Transform) techniques.}
+\end{itemize}
+}
+
+\cventry{}{}{Energy Efficient Dictionary Learning}{\textnormal {\emph{May 2014--Aug 2014}}}{}
+%{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
+%Detalle de logros:%
+{
+\vspace*{-1\baselineskip}
+\begin{itemize}%
+\item {Implemented a middleware \emph{[Java]} to reduce latency and energy consumption of applications running on a mobile device by using computational capability of other mobile/static devices in the proximity.} 
+\item {Implemented a resource-to-task mapper for a distributed framework \emph{[Android AllJoyn IoT Framework]} to offload tasks from a device with limited computational capability to other devices in vicinity in a round-robin fashion. }
+\end{itemize}
+}
+
+\cventry{}{}{Accelerating mobile applications via distributed computing}{\textnormal {\emph{May 2014--Aug 2014}}}{}
+%{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
+%Detalle de logros:%
+{
+\vspace*{-1\baselineskip}
+\begin{itemize}%
+\item {Implemented a middleware \emph{[Java]} to reduce latency and energy consumption of applications running on a mobile device by using computational capability of other mobile/static devices in the proximity.} 
+\item {Implemented a resource-to-task mapper for a distributed framework \emph{[Android AllJoyn IoT Framework]} to offload tasks from a device with limited computational capability to other devices in vicinity in a round-robin fashion. }
+\end{itemize}
+}
+
+
+\section{Technical Skills}
+\cvitem{Languages}{MATLAB, Python, Java, C/C++  \quad \quad \quad \quad \quad \quad \quad \quad\quad \textbf{Platform}: Raspberry Pi, Android, Windows, Linux} 
+\cvitem{Libraries}{OpenCV, VLFeat, NumPy, SciPy, Scikit-learn, TensorFlow, Git}
+%\cvitem{Platform}{Raspberry Pi, Android, Windows, Linux}
+
+
+\section{Selected Publications (\href{https://scholar.google.com/citations?user=uXMCivAAAAAJ&hl=en}{Click here for complete list)}}
+\cvlistitem{\textbf{P. Pandey}, Q. He, D. Pompili, and R. Tron, ``Light-weight Object Detection and Decision Making via Approximate Computing in Resource-constrained Mobile Robots", in \emph{Proc. of IEEE International Conference on Intelligent Robots and Systems (IROS)}, 2018.}
+\cvlistitem{\textbf{P. Pandey}, M. Rahmati, D. Pompili, and W. Bajwa, ``Robust Distributed Dictionary Learning for In-network Image Compression," in \emph{Proc. of IEEE International Conference on Autonomic Computing (ICAC)}, 2018.}
+\cvlistitem{\textbf{P. Pandey} and D. Pompili, ``MobiDiC:  Exploiting the Untapped Potential of Mobile Distributed Computing via Approximation," in \emph{Proc. of IEEE Pervasive Computing and Communications Conference (PerCom)}, 2016.}
+\cvlistitem{H. Viswanathan, \textbf{P. Pandey}, and D. Pompili, ``Maestro: Orchestrating Concurrent Workflows Execution in Mobile Device Clouds", in \emph{Proc. of IEEE  International Conference on Autonomic Computing (ICAC)}, 2016.}
+
+%\renewcommand{\listitemsymbol}{-~}            % para cambiar el simbolo para las listas
+
+\section{Awards}
+\cvlistitem{\emph{Best Paper Award} at IEEE Wireless On-demand Network Systems \& Services (WONS), 2017.}
+\cvlistitem{\emph{Best Application Paper Award} at IEEE Transactions on Automation Science and Engineering (T-ASE), 2016.}
+\cvlistitem{Grace Hopper Celebration Scholar, 2014 and Rutgers \emph{ECE Research Excellence} Award, 2013.}
+
+                 % 'publications' es el nombre del archivo BibTeX
+
+% Las publicaciones tomadas de un archivo BibTeX usando el paquete multibib
+%\section{Publicaciones}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' es el nombre del archivo BibTeX
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' es el nombre del archivo BibTeX
+
+%\clearpage\end{CJK*}                          % si esta redactando su CV en chino usando CJK, \clearpage es requerido por fancyhdr para que funcione correctamente con CJK, aunque esto eliminara la numeracion de pagina al dejar \lastpage como no definido
+\end{document}
+
+
+%% fin del archivo `template-es.tex'.
